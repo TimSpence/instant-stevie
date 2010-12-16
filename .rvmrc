@@ -1,0 +1,7 @@
+
+if [[ -d "${rvm_path:-$HOME/.rvm}/environments" \
+  && -s "${rvm_path:-$HOME/.rvm}/environments/ruby-1.8.7-p302@instant-stevie" ]] ; then
+  \. "${rvm_path:-$HOME/.rvm}/environments/ruby-1.8.7-p302@instant-stevie"
+else
+  rvm --create  "ruby-1.8.7-p302@instant-stevie"
+fi
